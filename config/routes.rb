@@ -8,6 +8,18 @@ Rails.application.routes.draw do
   put '/organizacion/:id', to: 'organizacion#update', as: 'actualizarorga' #actualiza los datos de una organizacion
   delete '/organizacion/:id', to: 'organizacion#destroy', as: 'destruirorga' #elimina una organizacion
   
+  #Registro de clientes
+  get '/cliente', to: 'cliente#index', as: 'indexcliente' #muestra una interfaz que solocita nombre y clave de un cliente
+  get '/cliente', to: 'cliente#new', as: 'nuevocliente' #muestra la interfaz para insertar los datos de un nuevo cliente
+  post '/cliente', to: 'cliente#create', as: 'crearcliente' #crea un nuevo cliente
+  get '/cliente/:id', to: 'cliente#show', as: 'mostrarcliente' #muestra la informacion de un cliente
+  get '/cliente/:id/edit', to: 'cliente#edit', as: 'editarcliente' #muestra la interfaz para editar los datos de un cliente
+  put '/cliente/:id', to: 'cliente#update', as: 'actualizarcliente' #actualiza los datos de un cliente
+  delete '/cliente/:id', to: 'cliente#destroy', as: 'destruircliente' #elimina un cliente
+  
+  
+  
+  
   
   
   
