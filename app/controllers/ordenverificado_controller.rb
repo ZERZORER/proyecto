@@ -1,0 +1,2 @@
+class OrdenverificadoController < ApplicationController
+end
