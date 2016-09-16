@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
-  
+  #Registro de organizaciones
+  get '/organizacion', to: 'organizacion#index', as: 'indexorga' #muestra una interfaz que solocita nombre y clave de una organizacion
+  get '/organizacion', to: 'organizacion#new', as: 'nuevaorga' #muestra la interfaz para insertar los datos de una nueva organizacion
+  post '/organizacion', to: 'organizacion#create', as: 'crearorga' #crea una nueva organizacion
+  get '/organizacion/:id', to: 'organizacion#show', as: 'mostrarorga' #muestra la informacion de una organizacion
+  get '/organizacion/:id/edit', to: 'organizacion#edit', as: 'editarorga' #muestra la interfaz para editar los datos de una organizacion
+  put '/organizacion/:id', to: 'organizacion#update', as: 'actualizarorga' #actualiza los datos de una organizacion
+  delete '/organizacion/:id', to: 'organizacion#destroy', as: 'destruirorga' #elimina una organizacion
   
   
   
