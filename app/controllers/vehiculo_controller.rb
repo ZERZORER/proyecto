@@ -1,5 +1,5 @@
 class VehiculoController < ApplicationController
-    
+     
 #----Interfaz----
   def new
   end
