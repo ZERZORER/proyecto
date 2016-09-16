@@ -54,58 +54,58 @@ Rails.application.routes.draw do
   delete '/gerente/:id', to: 'gerente#destroy', as: 'destruirgerente' #elimina un gerente
   
   #Registro de personal base
-  get '/base', to: 'base#index', as: 'indexbase' #muestra una lista de gerentes
-  get '/base', to: 'base#new', as: 'nuevobase' #muestra la interfaz para insertar los datos de un nuevo gerente
-  post '/base', to: 'base#create', as: 'crearbase' #crea un nuevo gerente
-  get '/base/:id', to: 'base#show', as: 'mostrarbase' #muestra la informacion de un gerente
-  get '/base/:id/edit', to: 'base#edit', as: 'editarbase' #muestra la interfaz para editar los datos de un gerente
-  put '/base/:id', to: 'base#update', as: 'actualizarbase' #actualiza los datos de un gerente
-  delete '/base/:id', to: 'base#destroy', as: 'destruirbase' #elimina un gerente
+  get '/base', to: 'base#index', as: 'indexbase' 
+  get '/base', to: 'base#new', as: 'nuevobase' 
+  post '/base', to: 'base#create', as: 'crearbase' 
+  get '/base/:id', to: 'base#show', as: 'mostrarbase'
+  get '/base/:id/edit', to: 'base#edit', as: 'editarbase' 
+  put '/base/:id', to: 'base#update', as: 'actualizarbase' 
+  delete '/base/:id', to: 'base#destroy', as: 'destruirbase' 
   
   #Registro de repartidores
-  get '/repartidor', to: 'repartidor#index', as: 'indexrepartidor' #muestra una lista de gerentes
-  get '/repartidor', to: 'repartidor#new', as: 'nuevorepartidor' #muestra la interfaz para insertar los datos de un nuevo gerente
-  post '/repartidor', to: 'repartidor#create', as: 'crearrepartidor' #crea un nuevo gerente
-  get '/repartidor/:id', to: 'repartidor#show', as: 'mostrarrepartidor' #muestra la informacion de un gerente
-  get '/repartidor/:id/edit', to: 'repartidor#edit', as: 'editarrepartidor' #muestra la interfaz para editar los datos de un gerente
-  put '/repartidor/:id', to: 'repartidor#update', as: 'actualizarrepartidor' #actualiza los datos de un gerente
-  delete '/repartidor/:id', to: 'repartidor#destroy', as: 'destruirrepartidor' #elimina un gerente
+  get '/repartidor', to: 'repartidor#index', as: 'indexrepartidor' 
+  get '/repartidor', to: 'repartidor#new', as: 'nuevorepartidor' 
+  post '/repartidor', to: 'repartidor#create', as: 'crearrepartidor'
+  get '/repartidor/:id', to: 'repartidor#show', as: 'mostrarrepartidor' 
+  get '/repartidor/:id/edit', to: 'repartidor#edit', as: 'editarrepartidor'
+  put '/repartidor/:id', to: 'repartidor#update', as: 'actualizarrepartidor' 
+  delete '/repartidor/:id', to: 'repartidor#destroy', as: 'destruirrepartidor' 
   
    #Registro de orden
-  get '/orden', to: 'orden#index', as: 'indexorden' #muestra una lista de gerentes
-  get '/orden', to: 'orden#new', as: 'nuevoorden' #muestra la interfaz para insertar los datos de un nuevo gerente
-  post '/orden', to: 'orden#create', as: 'crearorden' #crea un nuevo gerente
-  get '/orden/:id', to: 'orden#show', as: 'mostrarorden' #muestra la informacion de un gerente
-  get '/orden/:id/edit', to: 'orden#edit', as: 'editarorden' #muestra la interfaz para editar los datos de un gerente
-  put '/orden/:id', to: 'orden#update', as: 'actualizarorden' #actualiza los datos de un gerente
-  delete '/orden/:id', to: 'orden#destroy', as: 'destruirorden' #elimina un gerente
+  get '/orden', to: 'orden#index', as: 'indexorden' 
+  get '/orden', to: 'orden#new', as: 'nuevoorden'
+  post '/orden', to: 'orden#create', as: 'crearorden'
+  get '/orden/:id', to: 'orden#show', as: 'mostrarorden' 
+  get '/orden/:id/edit', to: 'orden#edit', as: 'editarorden' 
+  put '/orden/:id', to: 'orden#update', as: 'actualizarorden'
+  delete '/orden/:id', to: 'orden#destroy', as: 'destruirorden'
   
      #Registro de pago
-  get '/pago', to: 'pago#index', as: 'indexpago' #muestra una lista de gerentes
-  get '/pago', to: 'pago#new', as: 'nuevopago' #muestra la interfaz para insertar los datos de un nuevo gerente
-  post '/pago', to: 'pago#create', as: 'crearpago' #crea un nuevo gerente
-  get '/pago/:id', to: 'pago#show', as: 'mostrarpago' #muestra la informacion de un gerente
-  get '/pago/:id/edit', to: 'pago#edit', as: 'editarpago' #muestra la interfaz para editar los datos de un gerente
-  put '/pago/:id', to: 'pago#update', as: 'actualizarpago' #actualiza los datos de un gerente
-  delete '/pago/:id', to: 'pago#destroy', as: 'destruirpago' #elimina un gerente
+  get '/pago', to: 'pago#index', as: 'indexpago' 
+  get '/pago', to: 'pago#new', as: 'nuevopago'
+  post '/pago', to: 'pago#create', as: 'crearpago' 
+  get '/pago/:id', to: 'pago#show', as: 'mostrarpago'
+  get '/pago/:id/edit', to: 'pago#edit', as: 'editarpago'
+  put '/pago/:id', to: 'pago#update', as: 'actualizarpago' 
+  delete '/pago/:id', to: 'pago#destroy', as: 'destruirpago' 
   
   #Registro de ordenverificado
-  get '/ordenverificado', to: 'ordenverificado#index', as: 'indexordenverificado' #muestra una lista de gerentes
-  get '/ordenverificado', to: 'ordenverificado#new', as: 'nuevoordenverificado' #muestra la interfaz para insertar los datos de un nuevo gerente
-  post '/ordenverificado', to: 'ordenverificado#create', as: 'crearordenverificado' #crea un nuevo gerente
-  get '/ordenverificado/:id', to: 'ordenverificado#show', as: 'mostrarordenverificado' #muestra la informacion de un gerente
-  get '/ordenverificado/:id/edit', to: 'ordenverificado#edit', as: 'editarordenverificado' #muestra la interfaz para editar los datos de un gerente
-  put '/ordenverificado/:id', to: 'ordenverificado#update', as: 'actualizarordenverificado' #actualiza los datos de un gerente
-  delete '/ordenverificado/:id', to: 'ordenverificado#destroy', as: 'destruirordenverificado' #elimina un gerente
+  get '/ordenverificado', to: 'ordenverificado#index', as: 'indexordenverificado'
+  get '/ordenverificado', to: 'ordenverificado#new', as: 'nuevoordenverificado' 
+  post '/ordenverificado', to: 'ordenverificado#create', as: 'crearordenverificado'
+  get '/ordenverificado/:id', to: 'ordenverificado#show', as: 'mostrarordenverificado' 
+  get '/ordenverificado/:id/edit', to: 'ordenverificado#edit', as: 'editarordenverificado'
+  put '/ordenverificado/:id', to: 'ordenverificado#update', as: 'actualizarordenverificado' 
+  delete '/ordenverificado/:id', to: 'ordenverificado#destroy', as: 'destruirordenverificado' 
   
   #Registro de ordenproducto
-  get '/ordenproducto', to: 'ordenproducto#index', as: 'indexordenproducto' #muestra una lista de gerentes
-  get '/ordenproducto', to: 'ordenproducto#new', as: 'nuevoordenproducto' #muestra la interfaz para insertar los datos de un nuevo gerente
-  post '/ordenproducto', to: 'ordenproducto#create', as: 'crearordenproducto' #crea un nuevo gerente
-  get '/ordenproducto/:id', to: 'ordenproducto#show', as: 'mostrarordenproducto' #muestra la informacion de un gerente
-  get '/ordenproducto/:id/edit', to: 'ordenproducto#edit', as: 'editarordenproducto' #muestra la interfaz para editar los datos de un gerente
-  put '/ordenproducto/:id', to: 'ordenproducto#update', as: 'actualizarordenproducto' #actualiza los datos de un gerente
-  delete '/ordenproducto/:id', to: 'ordenproducto#destroy', as: 'destruirordenproducto' #elimina un gerente
+  get '/ordenproducto', to: 'ordenproducto#index', as: 'indexordenproducto'
+  get '/ordenproducto', to: 'ordenproducto#new', as: 'nuevoordenproducto' 
+  post '/ordenproducto', to: 'ordenproducto#create', as: 'crearordenproducto'
+  get '/ordenproducto/:id', to: 'ordenproducto#show', as: 'mostrarordenproducto' 
+  get '/ordenproducto/:id/edit', to: 'ordenproducto#edit', as: 'editarordenproducto' 
+  put '/ordenproducto/:id', to: 'ordenproducto#update', as: 'actualizarordenproducto' 
+  delete '/ordenproducto/:id', to: 'ordenproducto#destroy', as: 'destruirordenproducto' 
   
   #Por el momento esto...
   
