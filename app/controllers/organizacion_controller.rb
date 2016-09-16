@@ -35,7 +35,7 @@ class OrganizacionController < ApplicationController
   
   def update
       received_id = params[:id]
-        @orga = Task.where(id: received_id).first
+        @orga = Organizacion.where(id: received_id).first
 
         @orga.update_attributes({
             nombre: params[:nombre],
